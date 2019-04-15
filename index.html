@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta author = "SavaN">
+	<title>Bet a Cat</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="catholder">
+			<div class="row cats">
+				<div class="col-lg-3"><img src="img/psycat.jpg" alt="">
+					<p class="catinfo">Pritisni Dugme da bi dobio podatke o takmicaru!</p>
+				</div>
+				<div class="col-lg-3"><img src="img/weedcat.jpg" alt="">
+					<p class="catinfo">Pritisni Dugme da bi dobio podatke o takmicaru!</p>
+				</div>
+				<div class="col-lg-3"><img src="img/garfild.jpg" alt="">
+					<p class="catinfo">Pritisni Dugme da bi dobio podatke o takmicaru!</p>
+				</div>
+				<div class="col-lg-3"><img src="img/coolcat.jpg" alt="">
+					<p class="catinfo">Pritisni Dugme da bi dobio podatke o takmicaru!</p>
+				</div>
+				<div id="catBtn" class="col-lg-12 btnc">
+					<button id="btn" type="button" class="btn btn-info btn-lg">MJAUUU</button>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+	<div id="race">
+		<div class="row psyc"><img id="prvam" class="racecats" src="img/psycat.jpg" alt=""></div>
+		<div class="row weedc"><img id="drugam" class="racecats" src="img/weedcat.jpg" alt=""></div>
+		<div class="row fatc"><img id="trecam" class="racecats" src="img/garfild.jpg" alt=""></div>
+		<div class="row coolc"><img id="cetvrtam" class="racecats" src="img/coolcat.jpg" alt=""></div>
+	</div>
+	</div> <!-- kraj container -->
+
+	<footer>
+		<h2 class="fh"></h2>
+	</footer>
+			<!-- OVO JE MODAL -->
+		<!-- Modal -->
+<div class="modal fade" id="betModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header myModal">
+        <h5 class="modal-title" id="exampleModalLabel">BET-@-CAT</h5>
+          <span><i class="fas fa-money-bill-alt fa-spin fa-4x moneyIc"></i></span>
+      </div>
+      <div class="modal-body myModal">
+      	<p>Kvota: <span class="kvota"></span></p>
+      	<span class="warn">*Pomeri strelicu van polja da bi izracunao dobitak!</span><br>
+      	<label for="ulog">Ulog:</label>
+        <input type="text" id="ulog" name="ulog"><br>
+      	<span class="warnBet"></span>
+        <label for="dobitak">Dobitak:</label>
+        <input type="text" id="dobitak" name="dobitak" disabled="">
+      </div>
+      <div class="modal-footer myModal">
+        <button id="placebet" type="button" class="btn btn-primary">UPLATI</button>  
+        <button id="betExit" type="button" class="btn btn-secondary" data-dismiss="modal">PONISTI</button>
+      </div>
+    </div>
+  </div>
+</div>
+			<!-- OVO JE KRAJ -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</body>
+</html>

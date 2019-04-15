@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.cats {
+	margin: 10px;
+	padding: 10px;
+}
+.cats img {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+}
+.cats {
+	background-color: rgb(20,23,26);
+	border-radius: 30px;
+}
+.catinfo {
+	color: rgb(29,161,242);
+	font-weight: bold;
+	margin-top: 2px;
+	padding: 15px;
+	line-height: 35px;
+}
+.btnc {
+	text-align: center;
+}
+.sava, .savaKvota {
+	color: rgb(255,0,0);
+}
+.betcat { /* ovo je za chose me kad bira macku da se kladi*/
+	color: #FFF;
+}
+.warn, .warnBet {
+	color: rgb(255,0,0);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+.myModal {
+	background-color: rgb(20,23,26);
+	color: rgb(0,109,248);
+}
+.modal-title {
+	color: rgb(29,161,242);
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+}
+.moneyIc {
+	background-color: rgb(20,23,26);
+	color: rgb(29,161,242);
+}
+.kvota {
+	font-weight: bold;
+}
+#race {
+	background-image: url('img/racestart.png');
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.racecats {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 7px 2px;
+	position: relative;
+	left: 10px;
+	top: 380px;
+}
+#prvam, #drugam, #trecam, #cetvrtam {
+	position: relative;
+	left: 10px;
+}
+.mycat {
+	border: 3px solid rgb(255,0,0);
+}
+#wtf {
+	display: none;
+}
+
+
+footer {
+	background-color: black;
+	padding: 40px;
+	margin-top: 50px;
+}
+.fh {
+	color: red;
+}
+footer span {
+	color: skyblue;
+}
