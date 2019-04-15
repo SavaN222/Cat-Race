@@ -171,6 +171,10 @@ jQuery(document).ready(function($) {
             getInfo();
         }
     }
+    var btnrst = $('#btnr');
+    btnrst.on('click', function() {
+        location.reload();
+    });
 
     function getInfo() {
         $(document).scrollTop($(".fh").offset().top);
@@ -192,9 +196,11 @@ jQuery(document).ready(function($) {
         if (xx == getindex) {
             $('.fh').html('CESTITAMO, vas dobitak je: ' + dobitak.val() + "<br>" +
                 "Pobednik je: " + "<span>" + pobednik + "</span>");
+            btnrst.show();
         } else {
             $('.fh').html('Izgubili ste :(' + "<br>" +
                 "Pobednik je: " + "<span>" + pobednik + "</span>");
+            btnrst.show();
         }
         return false;
     }

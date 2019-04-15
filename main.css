@@ -61,7 +61,7 @@ body {
 }
 #race {
 	background-image: url('img/racestart.png');
-	width: 100%;
+	width: 1000px;
 	height: 700px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -98,4 +98,7 @@ footer {
 }
 footer span {
 	color: skyblue;
+}
+.btnrst {
+	display: none;
 }
