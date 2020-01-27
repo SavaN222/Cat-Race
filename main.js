@@ -23,10 +23,10 @@ jQuery(document).ready(function($) {
         this.cweight = cweight;
         this.desc = desc;
     }
-    var psyCat = new createCat("Psy Cat", "3", "10kg", "PSY CAT najveca snaga psiho supstance");
-    var weedCat = new createCat("Snoop Cat", "5", "15kg", "Snoop CAT bliski rodjak Snoop Doga");
-    var fatCat = new createCat("Fat Joe", "10", "65kg", "Fat Joe ni sam ne zna sta trazi ovde");
-    var bondCat = new createCat("Cat Bond", "7", "20kg", "Najveci favorit,macka James Bond-a");
+    var psyCat = new createCat("Psy Cat", "3", "10kg", "PSY CAT biggest power is psycho substance");
+    var weedCat = new createCat("Snoop Cat", "5", "15kg", "Snoop CAT very close cousin of Snoop Dog");
+    var fatCat = new createCat("Fat Joe", "10", "65kg", "Fat Joe he doesn't even know what he's looking for here");
+    var bondCat = new createCat("Cat Bond", "7", "20kg", "Biggest Favorit,cat of James Bond");
     var cats = [psyCat, weedCat, fatCat, bondCat];
 
     for (let i = 0; i < cats.length; i++) {
@@ -69,10 +69,10 @@ jQuery(document).ready(function($) {
     function validacija() {
         var testVal = ulog.val();
         if (testVal < 100 || testVal > 10000) {
-            warnBet.text("*Ne mozete uloziti manje od 100$ ili vise od 10000$");
+            warnBet.text("*Your bet must be higher than 100$ and smaller than 10000$");
             return false;
         } else if (isNaN(testVal)) {
-            warnBet.text("*Mozete uneti samo brojeve!");
+            warnBet.text("*NUMBERS ONLY!");
             warnBet.append('<br>');
             return false;
         } else {
@@ -95,8 +95,8 @@ jQuery(document).ready(function($) {
         warnBet.text('');
     })
     $('#placebet').on('click', function() {
-        var conf = confirm('Da li ste sigurni? \n\ Vas ulog je: ' + ulog.val() +
-            ' \n\ Dobitak: ' + dobitak.val());
+        var conf = confirm('Are you sure? \n\ Your bet is : ' + ulog.val() +
+            ' \n\ Winnings: ' + dobitak.val());
         if (conf === true) {
             var getB = validacija();
             if (getB === true && conf === true) {
@@ -194,11 +194,11 @@ jQuery(document).ready(function($) {
                 break;
         }
         if (xx == getindex) {
-            $('.fh').html('CESTITAMO, vas dobitak je: ' + dobitak.val() + "<br>" +
+            $('.fh').html('Congratulations, your prize is: ' + dobitak.val() + "<br>" +
                 "Pobednik je: " + "<span>" + pobednik + "</span>");
             btnrst.show();
         } else {
-            $('.fh').html('Izgubili ste :(' + "<br>" +
+            $('.fh').html('You lose! :(' + "<br>" +
                 "Pobednik je: " + "<span>" + pobednik + "</span>");
             btnrst.show();
         }
