@@ -195,11 +195,11 @@ jQuery(document).ready(function($) {
         }
         if (xx == getindex) {
             $('.fh').html('Congratulations, your prize is: ' + dobitak.val() + "<br>" +
-                "Pobednik je: " + "<span>" + pobednik + "</span>");
+                "Winner is: " + "<span>" + pobednik + "</span>");
             btnrst.show();
         } else {
             $('.fh').html('You lose! :(' + "<br>" +
-                "Pobednik je: " + "<span>" + pobednik + "</span>");
+                "Winner is: " + "<span>" + pobednik + "</span>");
             btnrst.show();
         }
         return false;
