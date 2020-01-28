@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
                 "Age: " + "<span class = 'sava'>" + cats[i].age + "</span>" + "<br>" +
                 "Weight: " + "<span class = 'sava'>" + cats[i].cweight + "</span>" + "<br>" +
                 "Description: " + "<br>" + "<span class = 'sava'>" + cats[i].desc + "</span>" + "<br>" +
-                "Kvota: " + "<span class = 'savaKvota'>" + cats[i].kvota + "</span>" + "<br>" + "<br>" +
+                "Bet Value: " + "<span class = 'savaKvota'>" + cats[i].kvota + "</span>" + "<br>" + "<br>" +
                 "<button data-toggle='modal' data-target='#betModal' type='button' class='btn btn-warning betcat '>BET ON ME</button>"
             );
             if (i == 3) {
